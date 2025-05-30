@@ -1,0 +1,29 @@
+{
+  "version": 2,
+  "routes": [
+    {
+      "src": "/api/videos",
+      "dest": "/api/videos.js"
+    },
+    {
+      "src": "/api/download/(.*)",
+      "dest": "/api/download.js"
+    },
+    {
+      "src": "/videos/(.*)",
+      "dest": "/videos/$1"
+    },
+    {
+      "src": "/(.*)",
+      "dest": "/$1"
+    }
+  ],
+  "functions": {
+    "api/videos.js": {
+      "maxDuration": 10
+    },
+    "api/download.js": {
+      "maxDuration": 30
+    }
+  }
+}
