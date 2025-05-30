@@ -14,12 +14,8 @@
       "dest": "/videos/$1"
     },
     {
-      "src": "/(.*\\.(css|js|html|ico|png|jpg|jpeg|gif|svg))",
-      "dest": "/$1"
-    },
-    {
-      "src": "/",
-      "dest": "/index.html"
+      "src": "/(.*)",
+      "dest": "/public/$1"
     }
   ],
   "functions": {
